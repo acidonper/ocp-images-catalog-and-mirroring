@@ -87,7 +87,7 @@ jq --argjson repo "$(<pull-secret-local.json)" '.auths += $repo' pull-secret.tex
 cp pull-secret.json $XDG_RUNTIME_DIR/containers/auth.json
 ```
 
-* Modify the *ImageSetConfig*
+* Modify the *ImageSetConfig* in order to add the correct imageURL to the mirror registry
 
 ```
 vi ./imageset-config.yaml
